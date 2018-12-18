@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>The Blog</title>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <h1 id="title">HELLO WORLD</h1>
+    <button id="newPost">New Blog Post</button>
+    <div id="form__background" class="hide">
+      <form name="Ffrm" id="form" onsubmit="return false" method="post">
+        <button id="form__closeButton"></button>
+        <label for="form__title" id="form__titleLabel">Title</label>
+        <br />
+        <input type="text" name="form__title" id="form__title" autocomplete="off" />
+        <br />
+        <label for="form__author" id="form__authorLabel">Author</label>
+        <br />
+        <input type="text" name="form__author" id="form__author" placeholder="Author" autocomplete="off" />
+        <br />
+        <label for="form__body" id="form__bodyLabel">Post text</label>
+        <br />
+        <textarea name="form_body" id="form__body" cols="30" rows="10"></textarea>
+        <br />
+        <input name="form__submit" id="form__submit" type="submit" value="Post" />
+      </form>
+    </div>
+    <section id="posts"></section>
+  </body>
+</html>
+
+
